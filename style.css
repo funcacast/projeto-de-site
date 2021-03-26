@@ -1,16 +1,21 @@
-body{
+/*body{
 
-}
+}*/
 
 #paragrafos{
     /*color:red;*/
     background-color: red; /*cor atrás do parágrafo */
     /*background: url(receita-sorvete-de-menta-com-chocolate.jpg) center/cover no-repeat fixed;
     background com imagem no fundo, centralizado, atrás do texto e sem repetição da imagem*/
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .subDiv{
     background-color: yellow;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #Titulo{
@@ -81,6 +86,12 @@ body{
     /*margin: 10px;
     margin-left: 10px;*/
 }
+#conteudo{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: larger;
+}
+
 /*bordas com margin e padding (border box/box model)*/
 .borda{
     border: 5px dashed green;
@@ -109,4 +120,79 @@ body{
     background-color: green;
     padding: 5px;
     outline: 5px dashed tomato;  
+}
+
+/*Ajuste de Textos*/
+#ajuste_texto{
+    color: red;
+    text-align: justify;
+    text-transform: capitalize;
+    text-indent: 35px;
+    text-decoration: underline overline line-through; /*none*/
+    letter-spacing: 1.5px;
+    line-height: 300%;
+    word-spacing: 5px;
+    text-shadow: 1px 1px #bbb;
+}
+
+/*Fontes*/
+#fontes{
+    font-family: fontedodunha, Helvetica, sans-serif; /*Caso o PC do usuário não tenha a 1ª, entra a 2ª / sans-serif: genérica*/
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+/*Estilo de Link*/
+.estilo_link{
+    text-decoration: none;
+    color: chocolate;
+    font-size: 50px;
+    /*cursor: crosshair;*/
+    border: 2px solid rgb(64, 12, 112);
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 8px; /*Arredonda o espaço da borda*/
+}
+
+.estilo_link:visited{
+    color: #ddd;
+    border-color: #ddd;
+}
+
+/*.estilo_link:hover{
+    background-color: rgb(64, 12, 112);
+    color: white;
+}*/
+
+.estilo_link:active{
+    background-color: rgb(64, 12, 112);
+    color: white;
+}
+
+/*Listas*/
+ul{
+    /*list-style-type: circle;*/
+    list-style-image: url(check.jpg);
+    list-style-position: inside;
+    margin: 0;
+    padding: 5px;
+    background-color: rgb(98, 0, 128);
+}
+
+ol{
+    list-style-type: upper-alpha;
+    list-style-position: inside;
+    background-color: yellowgreen;
+    padding: 5px;
+}
+
+li{
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: darkcyan;
+    margin: 5px;
+    padding: 5px;
 }
