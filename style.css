@@ -1,6 +1,6 @@
-/*body{
-
-}*/
+a:visited{
+    color:pink;
+}
 
 #paragrafos{
     /*color:red;*/
@@ -157,15 +157,15 @@
     border-radius: 8px; /*Arredonda o espaço da borda*/
 }
 
-.estilo_link:visited{
+/*.estilo_link:visited{
     color: #ddd;
     border-color: #ddd;
-}
+}*/
 
-/*.estilo_link:hover{
+.estilo_link:hover{
     background-color: rgb(64, 12, 112);
     color: white;
-}*/
+}
 
 .estilo_link:active{
     background-color: rgb(64, 12, 112);

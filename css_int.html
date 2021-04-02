@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulinha de CSS Intermediário</title>
+
+    <style type="text/css">
+    body{
+        font-size: 1.2rem;
+    }
+    /*Overflow*/
+    #container{
+        color: yellow;
+        background-color: blue;
+        width: 300px;
+        height: 100px;
+
+        /*overflow: auto;*/
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+    /*Alinhamento horizontal*/
+    #quadrado{
+        width: 50px;
+        height: 50px;
+        background-color: teal;
+
+        /*margin-left: 500px;*/
+        margin-left: auto;
+
+    }
+    #centr_horiz{
+        margin: auto;
+        display: block;
+    }
+    /*Position (posicionamento)*/
+    .quadrado2{
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+
+    .bg-red{
+        background-color: red;
+    }
+    
+    .bg-blue{
+        background-color: blue;
+    }
+
+    .bg-green{
+        background-color: green;
+    }
+
+    .static{
+        position: static;
+    }
+
+    .relative{
+        position: relative;
+        /*top: 15px;*/
+        left: 20px;
+        /*right: 40px;*/
+    }
+
+    .fixed{
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .absolute{
+        position: absolute;
+        left: 20px;
+    }
+
+    .ret{
+        width: 200px;
+        height: 500px;
+        margin-top: 10px;
+        overflow: auto;
+    }
+
+    .sticky{
+        position: sticky;
+        top: 0px;
+    }
+
+    </style>
+
+</head>
+<body>
+    
+    <div style="background-color: blue;">
+
+        <div >Esta é uma DIV normal</div>
+
+        <div >E aqui a história<div style="background-color: red; width: 500px;">DIV de dentro</div>continua.</div>
+
+    </div>
+    
+    <div>
+
+        <p style="margin: 0">Este é um parágrafo normal</p>
+        <p style="margin: 0">E aqui a história continua</p>
+
+    </div>
+
+    <p>Início de um parágrafo <span style="background-color: green; display: inline-block; width: 500px;">um SPAN no meio</span> e aqui é o fim do parágrafo.</p>
+
+    <p style="background-color: blue;">Início de um parágrafo <div style="background-color: red;">uma DIV no meio</div> e aqui é o fim do parágrafo.</p>
+
+    <p>Início de um parágrafo <img src="funca cast novo_peq.jpg" style="width: 400px; display: none;"> e o fim do parágrafo.</p>
+
+    <hr><br>
+
+    <div id="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit explicabo quidem incidunt corrupti, totam autem nostrum illum. Obcaecati est, cum aliquid vel magni, necessitatibus ipsa error eos nemo similique omnis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis in cupiditate illum, ea nemo doloremque asperiores. Assumenda, perspiciatis? Asperiores, aliquid voluptates doloribus voluptatem unde pariatur incidunt ratione dicta odio molestiae.
+    </div>
+
+    <p></p><hr><br>
+
+    <div id="quadrado">
+    </div>
+    <img src="funca cast novo_peq.jpg" id="centr_horiz">
+
+    <p></p><hr><br>
+
+    <div class="static quadrado2 bg-red">
+
+    </div>
+
+    <div class="relative quadrado2 bg-blue">
+        
+    </div>
+
+    <div class="ret bg-red">
+        <div class="quadrado2 bg-blue"></div>
+        <div class="quadrado2 bg-green sticky"></div>
+        <div class="quadrado2 bg-blue"></div>
+        <div class="quadrado2 bg-blue"></div>
+        <div class="quadrado2 bg-blue"></div>
+        <div class="quadrado2 bg-blue"></div>
+        <div class="quadrado2 bg-blue"></div>
+        <div class="quadrado2 bg-blue"></div>
+        <div class="quadrado2 bg-blue"></div>
+        <div class="quadrado2 bg-blue"></div>
+    </div>
+
+</body>
+</html>
