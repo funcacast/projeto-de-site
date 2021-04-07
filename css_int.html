@@ -10,6 +10,7 @@
     body{
         font-size: 1.2rem;
     }
+    
     /*Overflow*/
     #container{
         color: yellow;
@@ -21,6 +22,7 @@
         overflow-x: hidden;
         overflow-y: visible;
     }
+    
     /*Alinhamento horizontal*/
     #quadrado{
         width: 50px;
@@ -35,6 +37,7 @@
         margin: auto;
         display: block;
     }
+    
     /*Position (posicionamento)*/
     .quadrado2{
         width: 100px;
@@ -88,6 +91,50 @@
         top: 0px;
     }
 
+    /*Float*/
+    #img1{
+        width: 130px;
+        height: 130px;
+        float: left;
+    }
+
+    #div_float{
+        border: 1px solid black;
+        padding: 10px;
+        background-color: cadetblue;
+        overflow: auto;
+    }
+    
+    /*Alinhamento Vertical*/
+    .card{
+        position: relative; /*Para o c2*/
+        width: 400px;
+        height: 200px;
+        border: 2px solid green;
+        float: left;
+        text-align: center;
+    }
+    .card2{
+        clear: none;
+        border: 2px solid green;
+        float: left;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .c1{
+        background-color: red;
+        line-height: 200px; /*Desvantagem: preciso saber o tamanho do elemento pai*/
+    }
+    .c2{
+        color: white;
+        background-color: blue;
+        position: absolute;
+        top: 50%; /*Ref ao pai do c2 (card)*/
+        left: 50%; /*Ref ao pai do c2 (card)*/
+        transform: translate(-50%, -50%); /*Ref. ao elemento em si, translate(x, y)*/
+    }
     </style>
 
 </head>
@@ -149,5 +196,31 @@
         <div class="quadrado2 bg-blue"></div>
     </div>
 
-</body>
+    <br><hr><br>
+
+    <div id="div_float">
+        <img src="funca cast novo_peq.jpg" id="img1">
+        
+        <p>Um texto qualquer: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea voluptates voluptate optio architecto maxime quisquam modi at in ipsum! Tempora repellendus obcaecati nam ab praesentium error tempore eligendi autem iusto! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur magni velit expedita vero repudiandae quaerat numquam harum ad quod fugiat distinctio perferendis sint dolore repellendus doloribus, delectus nesciunt, culpa in.</p>
+    </div>
+    
+    <br><hr><br>
+
+    <div class="card">
+        <div class="c1">
+            Funça Cast
+        </div>
+    </div>
+    <div class="card">
+        <div class="c2">
+            Funça Cast
+        </div>
+    </div>
+    <div class="card2">
+        <div style="background-color: chartreuse;">
+            Funça Cast
+        </div>
+    </div>
+
+    </body>
 </html>

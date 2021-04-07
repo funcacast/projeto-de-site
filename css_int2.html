@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+<style type="text/css">
+
+/*Responsividade*/
+.cabeca{
+    background-color: gray;
+    height: 100px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.content{
+    background-color: blue;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    color: yellow;
+    text-align: center;
+    font-size: 6vw; /*para aumentar de acordo com o tamanho da tela*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body{
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+/*Media Queries*/
+.header{
+    background-color: mediumslateblue;
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    font-size: 18px;
+    overflow: hidden;
+}
+.logo{
+    color: white;
+    float: left;
+}
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+li{
+    float: left;
+    color: white;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 500px){
+    .logo{
+        float: none;
+        text-align: center;
+
+    }
+    .menu{
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+    li{
+        float: none;
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+    <div class="cabeca">
+        <div class="content">
+            Olaaar guerreiros
+        </div>
+
+    </div>
+
+    <br><br><br><hr><br>
+
+    <div class="header">
+        <div class="logo">
+            Logo
+        </div>
+
+        <ul class="menu">
+            <li>Home</li>
+            <li>Cursos</li>
+            <li>Contato</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
